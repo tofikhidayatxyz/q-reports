@@ -1,3 +1,5 @@
+import { startQueueReporter } from '@report/report'
+
 if (process.browser) {
   // dispatch reporter on document loaded
   document.addEventListener('DOMContentLoaded', () => startQueueReporter(true))
